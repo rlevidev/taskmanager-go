@@ -8,7 +8,7 @@ import (
 	pt "github.com/go-playground/locales/pt"
 	ut "github.com/go-playground/universal-translator"
 	"github.com/go-playground/validator/v10"
-	resterr "github.com/rlevidev/oauth-go/src/config/rest_err"
+	resterr "github.com/rlevidev/taskmanager-go/src/config/resterr"
 
 	pt_translation "github.com/go-playground/validator/v10/translations/pt"
 )

@@ -7,7 +7,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/rlevidev/oauth-go/src/models"
+	"github.com/rlevidev/taskmanager-go/src/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
