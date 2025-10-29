@@ -21,10 +21,13 @@ func SetupRoutes(r *gin.Engine, db *gorm.DB) {
 	}
 
 	// Grupo de rotas protegidas (com autenticação)
-	protected := r.Group("/api/v1")
+	protected := r.Group("/api/v1/users/profile")
 	protected.Use(middleware.AuthMiddleware())
 	{
 		// Rotas que precisam de autenticação podem ser adicionadas aqui
 		// Exemplo: protected.GET("/users/profile", controllers.GetUserProfile)
+		protected.POST("/createtask", func(ctx *gin.Context) {
+			controllers.CreateTask(ctx, db)
+		})
 	}
 }
