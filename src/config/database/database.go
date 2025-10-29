@@ -96,6 +96,7 @@ func Init() (*gorm.DB, error) {
 	// Auto-migrate das tabelas
 	err = db.AutoMigrate(
 		&models.UserDomain{},
+		&models.TaskDomain{},
 	)
 	if err != nil {
 		log.Printf("Erro ao migrar o banco de dados: %v", err)
