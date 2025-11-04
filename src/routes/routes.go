@@ -31,5 +31,14 @@ func SetupRoutes(r *gin.Engine, db *gorm.DB) {
 		protected.POST("/createtask", func(ctx *gin.Context) {
 			controllers.CreateTask(ctx, db)
 		})
+		protected.PUT("/:task_id/finishtask", func(ctx *gin.Context) {
+			controllers.FinishTask(ctx, db)
+		})
+		protected.PUT("/:task_id/doingtask", func(ctx *gin.Context) {
+			controllers.DoingTask(ctx, db)
+		})
+		protected.DELETE("/:task_id/deletetask", func(ctx *gin.Context) {
+			controllers.DeleteTask(ctx, db)
+		})
 	}
 }
