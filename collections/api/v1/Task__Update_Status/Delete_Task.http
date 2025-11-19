@@ -1,0 +1,13 @@
+DELETE http://localhost:8080/api/v1/users/profile/{task_id}/deletetask
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZGMzMWI1NzUtMzYxMC00NDc0LTkwZDEtNjBiNmNhOTYwNTdhIiwiZW1haWwiOiJybGV2aWRldkBnbWFpbC5jb20iLCJuYW1lIjoiUmHDrSBMZXZpIiwiZXhwIjoxNzYxODI4MjU3LCJpYXQiOjE3NjE3NDE4NTd9._K1Z4kGdEN7D0vLPRHaTcC6cDFJBNnTq6n6vBGwfchg
+
+Content-Type: application/json
+
+### Exemplo de uso:
+# Substitua {task_id} pelo ID real da tarefa
+# Exemplo: DELETE http://localhost:8080/api/v1/users/profile/123e4567-e89b-12d3-a456-426614174000/deletetask
+
+# Resposta esperada:
+# {
+#   "message": "Tarefa deletada com sucesso"
+# }
