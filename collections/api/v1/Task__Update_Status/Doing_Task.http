@@ -1,0 +1,12 @@
+PUT http://localhost:8080/api/v1/users/profile/{task_id}/doingtask
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+Content-Type: application/json
+
+### Exemplo de uso:
+# Substitua {task_id} pelo ID real da tarefa
+# Exemplo: PUT http://localhost:8080/api/v1/users/profile/123e4567-e89b-12d3-a456-426614174000/doingtask
+
+# Resposta esperada:
+# {
+#   "message": "Status da tarefa atualizado para 'fazendo'"
+# }
